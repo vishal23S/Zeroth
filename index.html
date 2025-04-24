@@ -3,11 +3,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    
-    
-    
-    
-    
+    <script>
+      // Force the correct title
+      window.onload = function() {
+        document.title = "Zeroth";
+      };
+      
+      // // Also check periodically to prevent other scripts from changing it
+      // setInterval(function() {
+      //   if (document.title !== "Zeroth") {
+      //     document.title = "Zeroth";
+      //   }
+      // }, 500);
+    </script>
     
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="Framer 3d3d426">
