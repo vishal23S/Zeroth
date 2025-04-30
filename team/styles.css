@@ -1,0 +1,223 @@
+/* Team Page Specific Styles */
+.team-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 40px 60px;
+    text-align: center;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.team-title {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+}
+
+.team-subtitle {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--text-gray);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* Updated Team Member Section Styles */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+    gap: 60px;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 24px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--light-gray);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.member-card:hover .member-photo img {
+    transform: scale(1.05);
+}
+
+.member-name {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+}
+
+.member-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin-bottom: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.member-bio {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-gray);
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1199px) {
+    .team-hero {
+        padding: 120px 32px 40px;
+    }
+    
+    .team-title {
+        font-size: 54px;
+        line-height: 60px;
+    }
+    
+    .member-photo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 809px) {
+    .team-hero {
+        padding: 100px 24px 30px;
+    }
+    
+    .team-title {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    
+    .team-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .team-member {
+        padding: 30px 24px 60px;
+        gap: 40px;
+    }
+    
+    .member-card {
+        padding: 24px;
+    }
+    
+    .member-photo {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .member-name {
+        font-size: 24px;
+    }
+    
+    .member-title {
+        font-size: 16px;
+    }
+    
+    .member-bio {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-hero {
+        padding: 80px 20px 20px;
+    }
+    
+    .team-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .team-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .team-member {
+        padding: 20px 20px 40px;
+        gap: 30px;
+    }
+    
+    .member-card {
+        padding: 20px;
+    }
+    
+    .member-photo {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 16px;
+    }
+    
+    .member-name {
+        font-size: 22px;
+    }
+    
+    .member-title {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .member-bio {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
