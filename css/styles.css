@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Halyard-Text-Thin";
-  src: url("./fonts/Halyard-Text-ExtraLight.ttf") format("truetype");
+  src: url("../assets/fonts/Halyard-Display-ExtraLight.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
