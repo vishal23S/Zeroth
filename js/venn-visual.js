@@ -66,7 +66,7 @@ function setPhase1(annotations) {
   fadeUpdate(annotations.bottom, "Complex");
   fadeUpdate(annotations.left, "Fragmented");
   fadeUpdate(annotations.right, "Disconnected");
-  fadeUpdate(annotations.center, "??");
+  fadeUpdate(annotations.center, "");
 }
 
 /**
