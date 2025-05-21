@@ -92,6 +92,12 @@ background: transparent;
   font-size: 24px;
 }
 
+.logo img {
+  width: clamp(2rem, 5vw, 3rem);
+  height: auto;
+  margin-right: 8px;
+}
+
 .logo a {
   color: var(--white);
   text-decoration: none;
@@ -125,7 +131,7 @@ background: transparent;
   font-size: 81px;
   font-weight: 400;
   line-height: 88px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--white);
 }
