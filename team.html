@@ -1,226 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team - Zeroth</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
     <!-- Custom favicon using SVG -->
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjUwIiBjeT0iMjUwIiByPSIyMjAiIGZpbGw9IiM1NTU1NTUiLz48cGF0aCBkPSJNMjUwIDMwQzI5NSAxMTAgMzQwIDE3MCA0MzAgMjUwQzM0MCAzMzAgMjk1IDM5MCAyNTAgNDcwQzIwNSAzOTAgMTYwIDMzMCA3MCAyNTBDMTYwIDE3MCAyMDUgMTEwIDI1MCAzMFoiIGZpbGw9IiM3Nzc3NzciLz48cGF0aCBkPSJNMzAgMjUwQzExMCAyMDUgMTcwIDE2MCAyNTAgNzBDMzMwIDE2MCAzOTAgMjA1IDQ3MCAyNTBDMzkwIDI5NSAzMzAgMzQwIDI1MCA0MzBDMTcwIDM0MCAxMTAgMjk1IDMwIDI1MFoiIGZpbGw9IiM2NjY2NjYiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIyNTAiIHI9IjcwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+" media="(prefers-color-scheme: light)">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/team.css">
     <style>
-    /* Additional specific styles for the team page */
-    body {
-        background-color: #000000;
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-    }
+        /* Additional specific styles for the team page */
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
 
-    /* Content container */
-    .content-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    
-    /* Team specific styles */
-    .team-hero {
-        width: 100%;
-        max-width: 1120px;
-        text-align: center;
-        padding-top: 140px;
-        padding-bottom: 60px;
-    }
-    
-    .team-title {
-        font-family: "Baskervville", serif;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 72px;
-        letter-spacing: -0.03em;
-        margin-bottom: 24px;
-        color: var(--white);
-        text-align: center;
-    }
-    
-    .team-subtitle {
-        font-family: "Halyard-Text-Thin", sans-serif;
-        font-size: 22px;
-        line-height: 32px;
-        color: var(--text-gray);
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    
-    .team-member {
-        width: 100%;
-        max-width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        gap: 60px;
-    }
-    
-    .member-card {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .member-photo {
-        width: 220px;
-        height: 220px;
-        margin-bottom: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 2px solid var(--light-gray);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    }
-    
-    .member-photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    
-    .member-name {
-        font-family: 'Baskervville', serif;
-        font-size: 28px;
-        font-weight: 400;
-        margin-bottom: 8px;
-        color: var(--white);
-        text-align: center;
-        width: 100%;
-    }
-    
-    .member-title {
-        font-family: 'Baskervville', serif;
-        font-size: 18px;
-        font-weight: 500;
-        color: var(--secondary);
-        margin-bottom: 16px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .member-bio {
-        font-family: "Halyard-Text-Thin", sans-serif;
-        font-size: 18px;
-        line-height: 28px;
-        color: var(--text-gray);
-        max-width: 600px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    /* Media Queries */
-    @media (max-width: 1199px) {
+        /* Content container */
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Team specific styles */
         .team-hero {
-            padding-top: 120px;
+            width: 100%;
+            max-width: 1120px;
+            text-align: center;
+            padding-top: 140px;
+            padding-bottom: 60px;
         }
-        
+
         .team-title {
-            font-size: 54px;
-            line-height: 60px;
+            font-family: "Baskervville", serif;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 72px;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+            color: var(--white);
+            text-align: center;
         }
-        
-        .member-photo {
-            width: 180px;
-            height: 180px;
-        }
-    }
-    
-    @media (max-width: 809px) {
-        .team-hero {
-            padding-top: 100px;
-            padding-bottom: 30px;
-        }
-        
-        .team-title {
-            font-size: 42px;
-            line-height: 48px;
-        }
-        
+
         .team-subtitle {
+            font-family: "Halyard-Text-Thin", sans-serif;
+            font-size: 22px;
+            line-height: 32px;
+            color: var(--text-gray);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .team-member {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            gap: 60px;
+        }
+
+        .member-card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .member-photo {
+            width: 220px;
+            height: 220px;
+            margin-bottom: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--light-gray);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .member-name {
+            font-family: 'Baskervville', serif;
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: var(--white);
+            text-align: center;
+            width: 100%;
+        }
+
+        .member-title {
+            font-family: 'Baskervville', serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--secondary);
+            margin-bottom: 16px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .member-bio {
+            font-family: "Halyard-Text-Thin", sans-serif;
             font-size: 18px;
             line-height: 28px;
+            color: var(--text-gray);
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
         }
-        
-        .team-member {
-            /* padding-bottom: 60px; */
-            gap: 40px;
+
+        /* Media Queries */
+        @media (max-width: 1199px) {
+            .team-hero {
+                padding-top: 120px;
+            }
+
+            .team-title {
+                font-size: 54px;
+                line-height: 60px;
+            }
+
+            .member-photo {
+                width: 180px;
+                height: 180px;
+            }
         }
-        
-        .member-photo {
-            width: 160px;
-            height: 160px;
+
+        @media (max-width: 809px) {
+            .team-hero {
+                padding-top: 100px;
+                padding-bottom: 30px;
+            }
+
+            .team-title {
+                font-size: 42px;
+                line-height: 48px;
+            }
+
+            .team-subtitle {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .team-member {
+                /* padding-bottom: 60px; */
+                gap: 40px;
+            }
+
+            .member-photo {
+                width: 160px;
+                height: 160px;
+            }
+
+            .member-name {
+                font-size: 24px;
+            }
+
+            .member-title {
+                font-size: 16px;
+            }
+
+            .member-bio {
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
-        
-        .member-name {
-            font-size: 24px;
+
+        @media (max-width: 480px) {
+            .team-hero {
+                padding-top: 80px;
+                padding-bottom: 20px;
+            }
+
+            .team-title {
+                font-size: 36px;
+                line-height: 40px;
+            }
+
+            .team-subtitle {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .member-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .member-name {
+                font-size: 22px;
+            }
+
+            .member-title {
+                font-size: 14px;
+            }
+
+            .member-bio {
+                font-size: 15px;
+                line-height: 22px;
+            }
         }
-        
-        .member-title {
-            font-size: 16px;
-        }
-        
-        .member-bio {
-            font-size: 16px;
-            line-height: 24px;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .team-hero {
-            padding-top: 80px;
-            padding-bottom: 20px;
-        }
-        
-        .team-title {
-            font-size: 36px;
-            line-height: 40px;
-        }
-        
-        .team-subtitle {
-            font-size: 16px;
-            line-height: 24px;
-        }
-        
-        .member-photo {
-            width: 140px;
-            height: 140px;
-        }
-        
-        .member-name {
-            font-size: 22px;
-        }
-        
-        .member-title {
-            font-size: 14px;
-        }
-        
-        .member-bio {
-            font-size: 15px;
-            line-height: 22px;
-        }
-    }
     </style>
 </head>
+
 <body>
     <!-- Custom cursor element -->
     <div id="cursor-follower"></div>
-    
+
     <!-- Header -->
     <header>
         <div class="header-container">
@@ -249,7 +257,8 @@
         <!-- Team Hero Section -->
         <section class="team-hero fade-slide-up">
             <h1 class="team-title">Team</h1>
-            <p class="team-subtitle">Meet the experts driving India's defense technology forward. Our team brings together decades of experience across defense, technology, and international relations.</p>
+            <p class="team-subtitle">Meet the experts driving India's defense technology forward. Our team brings
+                together decades of experience across defense, technology, and international relations.</p>
         </section>
 
         <!-- Team Member Section -->
@@ -257,42 +266,66 @@
             <!-- Siddharth Mandala -->
             <div class="member-card">
                 <div class="member-photo">
-                    <img src="assets/images/team/siddharth.png" alt="Siddharth Mandala" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNTU1NTU1Ii8+PHBhdGggZD0iTTE2MCAxMDBDMTg1IDEzMCAyMDUgMTUwIDI0MCAxNjBDMjA1IDE3MCAxODUgMTkwIDE2MCAyMjBDMTM1IDE5MCAxMTUgMTcwIDgwIDE2MEMxMTUgMTUwIDEzNSAxMzAgMTYwIDEwMFoiIGZpbGw9IiM3Nzc3NzciLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+'; this.style.objectFit='cover';">>
+                    <img src="assets/images/team/siddharth.png" alt="Siddharth Mandala"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNTU1NTU1Ii8+PHBhdGggZD0iTTE2MCAxMDBDMTg1IDEzMCAyMDUgMTUwIDI0MCAxNjBDMjA1IDE3MCAxODUgMTkwIDE2MCAyMjBDMTM1IDE5MCAxMTUgMTcwIDgwIDE2MEMxMTUgMTUwIDEzNSAxMzAgMTYwIDEwMFoiIGZpbGw9IiM3Nzc3NzciLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+'; this.style.objectFit='cover';">>
                 </div>
                 <h2 class="member-name">Siddharth Mandala</h2>
                 <p class="member-title">Co-founder & CEO</p>
                 <div class="member-bio">
-                    <p><span style='color: white;'>Siddharth Mandala</span> is a <span style='color: white;'>tech entrepreneur,</span> <span style='color: white;'>TEDx Speaker</span> and a <span style='color: white;'>dual degree major</span> in <span style='color: white;'>Industrial Engineering from Columbia University</span> and <span style='color: white;'>Economics from Claremont McKenna College</span>. He <span style='color: white;'>developed innovative protective gear</span> to safeguard citizens against assualt. Siddharth's invention was <span style='color: white;'>featured in over 300 international outlets</span> and he <span style='color: white;'>received accolades from the Indian Government</span> for its impact. Siddharth now <span style='color: white;'>focuses on advancing India’s defense capabilities through innovation</span> and <span style='color: white;'>strengthening its emerging defense ecosystem</span>.</p>
+                    <p><span style='color: white;'>Siddharth Mandala</span> is a <span style='color: white;'>tech
+                            entrepreneur,</span> <span style='color: white;'>TEDx Speaker</span> and a <span
+                            style='color: white;'>dual degree major</span> in <span style='color: white;'>Industrial
+                            Engineering from Columbia University</span> and <span style='color: white;'>Economics from
+                            Claremont McKenna College</span>. He <span style='color: white;'>developed innovative
+                            protective gear</span> to safeguard citizens against assualt. Siddharth's invention was
+                        <span style='color: white;'>featured in over 300 international outlets</span> and he <span
+                            style='color: white;'>received accolades from the Indian Government</span> for its impact.
+                        Siddharth now <span style='color: white;'>focuses on advancing India’s defense capabilities
+                            through innovation</span> and <span style='color: white;'>strengthening its emerging defense
+                            ecosystem</span>.
+                    </p>
                 </div>
             </div>
-            
+
             <hr class="faded-hr">
-            
-            <!-- Vishal Sunkara -->        
+
+            <!-- Vishal Sunkara -->
             <div class="member-card">
                 <div class="member-photo">
-                    <img src="assets/images/team/vishal.png" alt="Vishal Sunkara" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNTU1NTU1Ii8+PHBhdGggZD0iTTE2MCAxMDBDMTg1IDEzMCAyMDUgMTUwIDI0MCAxNjBDMjA1IDE3MCAxODUgMTkwIDE2MCAyMjBDMTM1IDE5MCAxMTUgMTcwIDgwIDE2MEMxMTUgMTUwIDEzNSAxMzAgMTYwIDEwMFoiIGZpbGw9IiM3Nzc3NzciLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+'; this.style.objectFit='cover';">
+                    <img src="assets/images/team/vishal.png" alt="Vishal Sunkara"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNTU1NTU1Ii8+PHBhdGggZD0iTTE2MCAxMDBDMTg1IDEzMCAyMDUgMTUwIDI0MCAxNjBDMjA1IDE3MCAxODUgMTkwIDE2MCAyMjBDMTM1IDE5MCAxMTUgMTcwIDgwIDE2MEMxMTUgMTUwIDEzNSAxMzAgMTYwIDEwMFoiIGZpbGw9IiM3Nzc3NzciLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+'; this.style.objectFit='cover';">
                 </div>
                 <h2 class="member-name">Vishal Sunkara</h2>
                 <p class="member-title">Co-founder & CTO</p>
                 <div class="member-bio">
-                    <p><span style='color: white;'>Vishal Sunkara</span> is a <span style='color: white;'>seasoned technology leader</span> with <span style='color: white;'>expertise in autonomous systems and AI applications</span> in defense. Pursued <span style='color: white;'>Master's in Computer Science at UT Austin</span> and he brings <span style='color: white;'>international experience</span>, along with a <span style='color: white;'>well-established network across the U.S. and EU defense sectors</span>.</p>
+                    <p><span style='color: white;'>Vishal Sunkara</span> is a <span style='color: white;'>seasoned
+                            technology leader</span> with <span style='color: white;'>expertise in autonomous systems
+                            and AI applications</span> in defense. Pursued <span style='color: white;'>Master's in
+                            Computer Science at UT Austin</span> and he brings <span style='color: white;'>international
+                            experience</span>, along with a <span style='color: white;'>well-established network across
+                            the U.S. and EU defense sectors</span>.</p>
                 </div>
             </div>
-            
+
             <hr class="faded-hr">
-            
-            <!-- Pinak Oza -->  
+
+            <!-- Pinak Oza -->
             <div class="member-card">
                 <div class="member-photo">
-                    <img src="assets/images/team/pinak.png" alt="Pinak Oza" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNTU1NTU1Ii8+PHBhdGggZD0iTTE2MCAxMDBDMTg1IDEzMCAyMDUgMTUwIDI0MCAxNjBDMjA1IDE3MCAxODUgMTkwIDE2MCAyMjBDMTM1IDE5MCAxMTUgMTcwIDgwIDE2MEMxMTUgMTUwIDEzNSAxMzAgMTYwIDEwMFoiIGZpbGw9IiM3Nzc3NzciLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+'; this.style.objectFit='cover';">
+                    <img src="assets/images/team/pinak.png" alt="Pinak Oza"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNTU1NTU1Ii8+PHBhdGggZD0iTTE2MCAxMDBDMTg1IDEzMCAyMDUgMTUwIDI0MCAxNjBDMjA1IDE3MCAxODUgMTkwIDE2MCAyMjBDMTM1IDE5MCAxMTUgMTcwIDgwIDE2MEMxMTUgMTUwIDEzNSAxMzAgMTYwIDEwMFoiIGZpbGw9IiM3Nzc3NzciLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjQwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+'; this.style.objectFit='cover';">
                 </div>
                 <h2 class="member-name">Pinak Oza</h2>
                 <p class="member-title">Founding Member & Chief of Engineering</p>
                 <div class="member-bio">
-                    <p><span style='color: white;'>Pinak Oza</span>, <span style='color: white;'>Chief Engineering Leader</span>, is an <span style='color: white;'>embedded‑systems engineer</span> and <span style='color: white;'>AR/VR pioneer</span>. After <span style='color: white;'>spearheading AR innovation at Shakespeare</span> and <span style='color: white;'>leading government immersive‑tech projects in India</span>, he now <span style='color: white;'>channels that expertise into mission‑ready solutions for the defense sector</span>.</p>
+                    <p><span style='color: white;'>Pinak Oza</span>, <span style='color: white;'>Chief Engineering
+                            Leader</span>, is an <span style='color: white;'>embedded‑systems engineer</span> and <span
+                            style='color: white;'>AR/VR pioneer</span>. After <span style='color: white;'>spearheading
+                            AR innovation at Shakespeare</span> and <span style='color: white;'>leading government
+                            immersive‑tech projects in India</span>, he now <span style='color: white;'>channels that
+                            expertise into mission‑ready solutions for the defense sector</span>.</p>
                 </div>
-            </div> 
+            </div>
 
         </section>
     </div>
@@ -320,8 +353,9 @@
                 <!-- Footer branding removed -->
             </div>
         </div>
-    </footer>    
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
