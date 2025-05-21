@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeroth</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
     <!-- Custom favicon using SVG -->
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjUwIiBjeT0iMjUwIiByPSIyMjAiIGZpbGw9IiM1NTU1NTUiLz48cGF0aCBkPSJNMjUwIDMwQzI5NSAxMTAgMzQwIDE3MCA0MzAgMjUwQzM0MCAzMzAgMjk1IDM5MCAyNTAgNDcwQzIwNSAzOTAgMTYwIDMzMCA3MCAyNTBDMTYwIDE3MCAyMDUgMTEwIDI1MCAzMFoiIGZpbGw9IiM3Nzc3NzciLz48cGF0aCBkPSJNMzAgMjUwQzExMCAyMDUgMTcwIDE2MCAyNTAgNzBDMzMwIDE2MCAzOTAgMjA1IDQ3MCAyNTBDMzkwIDI5NSAzMzAgMzQwIDI1MCA0MzBDMTcwIDM0MCAxMTAgMjk1IDMwIDI1MFoiIGZpbGw9IiM2NjY2NjYiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIyNTAiIHI9IjcwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjUwIiBjeT0iMjUwIiByPSIyMjAiIGZpbGw9IiM1NTU1NTUiLz48cGF0aCBkPSJNMjUwIDMwQzI5NSAxMTAgMzQwIDE3MCA0MzAgMjUwQzM0MCAzMzAgMjk1IDM5MCAyNTAgNDcwQzIwNSAzOTAgMTYwIDMzMCA3MCAyNTBDMTYwIDE3MCAyMDUgMTEwIDI1MCAzMFoiIGZpbGw9IiM3Nzc3NzciLz48cGF0aCBkPSJNMzAgMjUwQzExMCAyMDUgMTcwIDE2MCAyNTAgNzBDMzMwIDE2MCAzOTAgMjA1IDQ3MCAyNTBDMzkwIDI5NSAzMzAgMzQwIDI1MCA0MzBDMTcwIDM0MCAxMTAgMjk1IDMwIDI1MFoiIGZpbGw9IiM2NjY2NjYiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIyNTAiIHI9IjcwIiBmaWxsPSIjODg4ODg4Ii8+PC9zdmc+"
+        media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/venn-visual.css">
+    <script src="js/venn-visual.js" defer></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
     <!-- Custom cursor element -->
     <div id="cursor-follower"></div>
-    
+
     <!-- Header -->
     <header>
         <div class="header-container">
@@ -37,105 +44,110 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero fade-slide-up">
         <div class="hero-content">
             <h1 class="hero-title">Zeroth</h1>
             <p class="hero-subtitle">Advancing Tomorrow's Defense & Today's Innovation</p>
         </div>
-        
-        <div class="dark-gradient"></div>
-        
-        <!-- Enhanced Metallic Flower with Animation -->
-        <div class="metallic-flower" id="metalFlower">
-            <div class="particles" id="particles"></div>
-            <div class="blurred-circle" id="blurredCircle"></div>
-            <div class="flower-svg" id="flowerSvg">
-                <svg width="100%" height="100%" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Metallic base -->
-                    <circle cx="250" cy="250" r="220" fill="url(#metalGradient)" class="base-circle"/>
-                    
-                    <!-- Flower petals shape -->
-                    <path d="M250 30C295 110 340 170 430 250C340 330 295 390 250 470C205 390 160 330 70 250C160 170 205 110 250 30Z" fill="url(#petalGradient)" class="petal" id="petal1"/>
-                    <path d="M30 250C110 205 170 160 250 70C330 160 390 205 470 250C390 295 330 340 250 430C170 340 110 295 30 250Z" fill="url(#petalGradient2)" class="petal" id="petal2"/>
-                    
-                    <!-- Center circle -->
-                    <circle cx="250" cy="250" r="70" fill="url(#centerGradient)" class="center-circle" id="centerCircle"/>
-                    
-                    <!-- Definitions for gradients -->
-                    <defs>
-                        <radialGradient id="metalGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 250) rotate(90) scale(220)">
-                            <stop offset="0" stop-color="#888888"/>
-                            <stop offset="1" stop-color="#333333"/>
-                        </radialGradient>
-                        
-                        <linearGradient id="petalGradient" x1="250" y1="30" x2="250" y2="470" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#999999"/>
-                            <stop offset="0.5" stop-color="#777777"/>
-                            <stop offset="1" stop-color="#555555"/>
-                        </linearGradient>
-                        
-                        <linearGradient id="petalGradient2" x1="30" y1="250" x2="470" y2="250" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#888888"/>
-                            <stop offset="0.5" stop-color="#666666"/>
-                            <stop offset="1" stop-color="#444444"/>
-                        </linearGradient>
-                        
-                        <radialGradient id="centerGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(230 230) rotate(45) scale(100)">
-                            <stop offset="0" stop-color="#AAAAAA"/>
-                            <stop offset="1" stop-color="#555555"/>
-                        </radialGradient>
-                    </defs>
-                </svg>
+
+        <div class="abstract_container">
+
+            <div class="annotation annot_center">??</div>
+
+            <div class="annotation annot_top">Obscure</div>
+            <div class="annotation annot_bottom">Complex</div>
+            <div class="annotation annot_left">Fragmented</div>
+            <div class="annotation annot_right">Disconnected</div>
+
+            <div class="ring-wrapper top">
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
             </div>
+
+            <div class="ring-wrapper bottom">
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+            </div>
+
+            <div class="ring-wrapper right">
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+            </div>
+
+            <div class="ring-wrapper left">
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+                <div class="circle_div"></div>
+            </div>
+
         </div>
+
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about fade-slide-up">
         <div class="about-content">
             <div class="about-text">
-                <p>In an era where national security is defined by technological superiority, Zeroth exists to ensure India is never left behind.</p>
+                <p>In an era where national security is defined by technological superiority, Zeroth exists to ensure
+                    India is never left behind.</p>
                 <br>
-                <p>We are a defense intelligence and sourcing firm that identifies, vets, and delivers frontier technologies from the world's most advanced innovation ecosystems — including the United States, Israel, Europe, and Russia — directly into the hands of Indian defense institutions.</p>
+                <p>We are a defense intelligence and sourcing firm that identifies, vets, and delivers frontier
+                    technologies from the world's most advanced innovation ecosystems — including the United States,
+                    Israel, Europe, and Russia — directly into the hands of Indian defense institutions.</p>
                 <br>
                 <p>Our work is not transactional. It is transformational.</p>
-                <br><br>
-                
+                <br>
+                <hr class="faded-hr">
+                <br>
+
                 <h2 class="section-title">What We Do</h2>
-                <br><br>
-                
+                <br>
+
                 <!-- Carousel -->
                 <div class="carousel-container">
                     <div class="carousel">
                         <div class="carousel-item">
                             <div class="carousel-content">
                                 <h3>Strategic Technology Scouting</h3>
-                                <p>We identify mission-critical innovations — from autonomous platforms and cyber systems to advanced sensing and AI — long before they reach conventional markets.</p>
+                                <p>We identify mission-critical innovations — from autonomous platforms and cyber
+                                    systems to advanced sensing and AI — long before they reach conventional markets.
+                                </p>
                             </div>
                         </div>
-                        
+
                         <div class="carousel-item">
                             <div class="carousel-content">
                                 <h3>'Buy vs Build' Advisory</h3>
-                                <p>We serve as a trusted advisor to many establishments, and defense OEMs — delivering high-fidelity analysis on when to acquire, when to build, and when to co-develop technology</p>
+                                <p>We serve as a trusted advisor to many establishments, and defense OEMs — delivering
+                                    high-fidelity analysis on when to acquire, when to build, and when to co-develop
+                                    technology</p>
                             </div>
                         </div>
-                        
+
                         <div class="carousel-item">
                             <div class="carousel-content">
                                 <h3>Export Control & Policy Navigation</h3>
-                                <p>We understand the geopolitical, legal, and regulatory complexity of international defense sourcing — and manage it with precision</p>
+                                <p>We understand the geopolitical, legal, and regulatory complexity of international
+                                    defense sourcing — and manage it with precision</p>
                             </div>
                         </div>
-                        
+
                         <div class="carousel-item">
                             <div class="carousel-content">
                                 <h3>Supply chain Architecture</h3>
-                                <p>From licensing and localization to deployment and lifecycle support — we engineer the entire pipeline from foreign lab to Indian frontline.</p>
+                                <p>From licensing and localization to deployment and lifecycle support — we engineer the
+                                    entire pipeline from foreign lab to Indian frontline.</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="carousel-controls">
                         <button class="carousel-prev">&#10094;</button>
                         <div class="carousel-dots">
@@ -147,22 +159,22 @@
                         <button class="carousel-next">&#10095;</button>
                     </div>
                 </div>
+                <br>
+                <hr class="faded-hr">
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-overlay"></div>
-        <div class="contact-gradient-top"></div>
+    <section class="contact fade-slide-up" id="contact">
         <div class="contact-gradient-bottom"></div>
-        
+
         <div class="contact-container">
             <div class="contact-content">
                 <div class="contact-header">
                     <h2 class="contact-title"><span>Get In </span>Touch With Our Team</h2>
                 </div>
-                
+
                 <div class="contact-info">
                     <p>Email: <a href="mailto:mandala.zth@gmail.com">mandala.zth@gmail.com</a></p>
                 </div>
@@ -173,6 +185,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
+            <div class="footer-divider"></div>
             <div class="footer-top">
                 <div class="footer-info">
                     <div class="footer-logo">
@@ -180,19 +193,19 @@
                     </div>
                     <p class="footer-text">www.zerothdefense.com</p>
                     <p class="footer-text">
-                        <a href="mailto:mandala.zth@gmail.com" style="color: #999999; text-decoration: none;">mandala.zth@gmail.com</a>
+                        <a href="mailto:mandala.zth@gmail.com"
+                            style="color: #999999; text-decoration: none;">mandala.zth@gmail.com</a>
                     </p>
                 </div>
             </div>
-            
+
             <div class="footer-divider"></div>
-            
+
             <div class="footer-bottom">
                 <!-- Footer branding removed -->
             </div>
         </div>
-    </footer>
-
-    <script src="scripts.js"></script>
+    </footer>    
 </body>
+
 </html>
